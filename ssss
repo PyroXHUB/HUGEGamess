@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "AquaFlowX HUB 🌊", HidePremium = true, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "AquaFlowX HUB 🌊	", HidePremium = true, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --[[
 Name = <ScriptSavvyHUB> - The name of the UI.
@@ -352,6 +352,76 @@ PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
 local Tab = Window:MakeTab({
+	Name = "BackRooms",
+	Icon = "rbxassetid://17392931280",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Dupe BackRooms Key🗝️"
+})
+Tab:AddTextbox({
+	Name = "BackRooms Key🔑",
+	Default = "Amount💰",
+	TextDisappear = true,
+	Callback = function(Value)
+		print(Value)
+	end	  
+})
+Tab:AddButton({
+	Name = "DUPE NOW⚡",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+local Section = Tab:AddSection({
+	Name = "TELEPORT ✨"
+})
+Tab:AddParagraph("NOTE📝","MAKE SURE YOU GOT ENOUGH BACKROOMS Key🔑 TO MAKE IT WORK.")
+Tab:AddButton({
+	Name = "TELEPORT TO 100X EGG🚀🥚",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "TELEPORT TO 50X EGG🚀🥚",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+--[[
+Name = <string> - The name of the section.
+]]
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+--[[
+Name = <string> - The name of the textbox.
+Default = <string> - The default value of the textbox.
+TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
+Callback = <function> - The function of the textbox.
+]]
+--[[
+Name = <string> - The name of the section.
+]]
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Tab = Window:MakeTab({
 	Name = "Misc",
 	Icon = "rbxassetid://17316707836",
 	PremiumOnly = false
@@ -392,7 +462,7 @@ Tab:AddTextbox({
 		print(Value)
 	end	  
 })
-
+OrionLib:Init()
 --[[
 Name = <string> - The name of the textbox.
 Default = <string> - The default value of the textbox.
