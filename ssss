@@ -332,7 +332,52 @@ Tab:AddToggle({
 		print(Value)
 	end    
 })
+local Tab = Window:MakeTab({
+	Name = "HUGE Duping",
+	Icon = "rbxassetid://17414279704",
+	PremiumOnly = false
+})
+Tab:AddParagraph("NOTE📝","THIS WILL ONLY WORKS ON HUGES, SO IF YOU INCOUNTER ANY BUGS MAKE SURE YOU GOT HUGES OR IF IT DOESN'T WORK CREATE A TICKET IN MY DISCORD SERVER")
+Tab:AddTextbox({
+	Name = "Amount💰",
+	Default = "Amount💰",
+	TextDisappear = true,
+	Callback = function(Value)
+		print(Value)
+	end	  
+})
+Tab:AddButton({
+	Name = "Start Duping🌀",
+	Callback = function()
+		local lib = require(game.ReplicatedStorage.Library)
 
+		local fromPet = "Corgi"
+		local toPet = "Huge Happy Computer"
+		
+		for i,v in pairs(lib.Directory.Pets[fromPet]) do
+		  lib.Directory.Pets[fromPet][i] = nil
+		end
+		for i,v in pairs(lib.Directory.Pets[toPet]) do
+		  lib.Directory.Pets[fromPet][i] = v
+		end
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+--[[
+Name = <string> - The name of the textbox.
+Default = <string> - The default value of the textbox.
+TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
+Callback = <function> - The function of the textbox.
+]]
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
 --[[
 Name = <string> - The name of the toggle.
 Default = <bool> - The default value of the toggle.
