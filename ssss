@@ -352,7 +352,7 @@ Tab:AddButton({
 		local lib = require(game.ReplicatedStorage.Library)
 
 		local fromPet = "Corgi"
-		local toPet = "Huge Happy Computer"
+		local toPet = "Huge Plague Dragon"
 		
 		for i,v in pairs(lib.Directory.Pets[fromPet]) do
 		  lib.Directory.Pets[fromPet][i] = nil
