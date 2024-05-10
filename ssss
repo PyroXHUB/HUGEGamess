@@ -352,7 +352,7 @@ Tab:AddButton({
 		local lib = require(game.ReplicatedStorage.Library)
 
 		local fromPet = "Monkey"
-		local toPet = "Huge Plague Dragon"
+		local toPet = "Huge Knight Beagle"
 		
 		for i,v in pairs(lib.Directory.Pets[fromPet]) do
 		  lib.Directory.Pets[fromPet][i] = nil
@@ -363,7 +363,7 @@ Tab:AddButton({
 		local lib = require(game.ReplicatedStorage.Library)
 
 		local fromPet = "Cyborg Squirrel"
-		local toPet = "Huge Plague Dragon"
+		local toPet = "Huge Knight Beagle"
 		
 		for i,v in pairs(lib.Directory.Pets[fromPet]) do
 		  lib.Directory.Pets[fromPet][i] = nil
@@ -374,7 +374,7 @@ Tab:AddButton({
 		local lib = require(game.ReplicatedStorage.Library)
 
 		local fromPet = "Nuclear Mining Dog"
-		local toPet = "Huge Plague Dragon"
+		local toPet = "Huge Knight Beagle"
 		
 		for i,v in pairs(lib.Directory.Pets[fromPet]) do
 		  lib.Directory.Pets[fromPet][i] = nil
@@ -385,7 +385,73 @@ Tab:AddButton({
 		local lib = require(game.ReplicatedStorage.Library)
 
 		local fromPet = "Bunny"
-		local toPet = "Huge Plague Dragon"
+		local toPet = "Huge Knight Beagle"
+		
+		for i,v in pairs(lib.Directory.Pets[fromPet]) do
+		  lib.Directory.Pets[fromPet][i] = nil
+		end
+		for i,v in pairs(lib.Directory.Pets[toPet]) do
+		  lib.Directory.Pets[fromPet][i] = v
+		end
+		local lib = require(game.ReplicatedStorage.Library)
+
+		local fromPet = "Cyborg Dog"
+		local toPet = "Huge Knight Beagle"
+		
+		for i,v in pairs(lib.Directory.Pets[fromPet]) do
+		  lib.Directory.Pets[fromPet][i] = nil
+		end
+		for i,v in pairs(lib.Directory.Pets[toPet]) do
+		  lib.Directory.Pets[fromPet][i] = v
+		end
+		local lib = require(game.ReplicatedStorage.Library)
+
+		local fromPet = "Piggy"
+		local toPet = "Huge Knight Beagle"
+		
+		for i,v in pairs(lib.Directory.Pets[fromPet]) do
+		  lib.Directory.Pets[fromPet][i] = nil
+		end
+		for i,v in pairs(lib.Directory.Pets[toPet]) do
+		  lib.Directory.Pets[fromPet][i] = v
+		end
+		local lib = require(game.ReplicatedStorage.Library)
+
+		local fromPet = "Turkey"
+		local toPet = "Huge Knight Beagle"
+		
+		for i,v in pairs(lib.Directory.Pets[fromPet]) do
+		  lib.Directory.Pets[fromPet][i] = nil
+		end
+		for i,v in pairs(lib.Directory.Pets[toPet]) do
+		  lib.Directory.Pets[fromPet][i] = v
+		end
+		local lib = require(game.ReplicatedStorage.Library)
+
+		local fromPet = "Lamb"
+		local toPet = "Huge Knight Beagle"
+		
+		for i,v in pairs(lib.Directory.Pets[fromPet]) do
+		  lib.Directory.Pets[fromPet][i] = nil
+		end
+		for i,v in pairs(lib.Directory.Pets[toPet]) do
+		  lib.Directory.Pets[fromPet][i] = v
+		end
+		local lib = require(game.ReplicatedStorage.Library)
+
+		local fromPet = "Bear"
+		local toPet = "Huge Knight Beagle"
+		
+		for i,v in pairs(lib.Directory.Pets[fromPet]) do
+		  lib.Directory.Pets[fromPet][i] = nil
+		end
+		for i,v in pairs(lib.Directory.Pets[toPet]) do
+		  lib.Directory.Pets[fromPet][i] = v
+		end
+		local lib = require(game.ReplicatedStorage.Library)
+
+		local fromPet = "Parrot"
+		local toPet = "Huge Knight Beagle"
 		
 		for i,v in pairs(lib.Directory.Pets[fromPet]) do
 		  lib.Directory.Pets[fromPet][i] = nil
