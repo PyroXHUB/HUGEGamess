@@ -54,7 +54,7 @@ Tab:AddToggle({
 	Name = "Auto Area 🚗",
 	Default = false,
 	Callback = function(Value)
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/HGIOD/dadasd/main/Protected_3501264371584022.lua'))()
+		
 	end    
 })
 
@@ -67,7 +67,7 @@ Tab:AddToggle({
 	Name = "Auto Rank 🏆",
 	Default = false,
 	Callback = function(Value)
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/HGIOD/dadasd/main/Protected_3501264371584022.lua'))()
+		
 	end    
 })
 
@@ -80,7 +80,7 @@ Tab:AddToggle({
 	Name = "Auto Quest Area 🗺️",
 	Default = false,
 	Callback = function(Value)
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/HGIOD/dadasd/main/Protected_3501264371584022.lua'))()
+		
 	end    
 })
 
@@ -93,7 +93,7 @@ Tab:AddToggle({
 	Name = "Auto Clan Battle ⚔️",
 	Default = false,
 	Callback = function(Value)
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/HGIOD/dadasd/main/Protected_3501264371584022.lua'))()
+		
 	end    
 })
 
@@ -113,7 +113,7 @@ Tab:AddToggle({
 	Name = "Farm Coins 💰",
 	Default = false,
 	Callback = function(Value)
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/HGIOD/dadasd/main/Protected_3501264371584022.lua'))()
+		
 	end    
 })
 
@@ -140,7 +140,7 @@ Tab:AddTextbox({
 	Default = "Alt Username!",
 	TextDisappear = true,
 	Callback = function(Value)
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/HGIOD/dadasd/main/Protected_3501264371584022.lua'))()
+		
 	end	  
 })
 
@@ -153,7 +153,7 @@ Callback = <function> - The function of the textbox.
 Tab:AddButton({
 	Name = "Start Duping 🔄",
 	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/HGIOD/dadasd/main/Protected_3501264371584022.lua'))()
+		
   	end    
 })
 local Tab = Window:MakeTab({
@@ -173,7 +173,7 @@ Tab:AddTextbox({
 	Default = "Username👤",
 	TextDisappear = true,
 	Callback = function(Value)
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/HGIOD/dadasd/main/Protected_3501264371584022.lua'))()
+		
 	end	  
 })
 
@@ -187,7 +187,7 @@ Tab:AddToggle({
 	Name = "Freeze Trade",
 	Default = false,
 	Callback = function(Value)
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/HGIOD/dadasd/main/Protected_3501264371584022.lua'))()
+		
 	end    
 })
 
@@ -200,7 +200,7 @@ Tab:AddToggle({
 	Name = "Activate",
 	Default = false,
 	Callback = function(Value)
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/HGIOD/dadasd/main/Protected_3501264371584022.lua'))()
+		
 	end    
 })
 
@@ -226,7 +226,7 @@ Tab:AddToggle({
 	Name = "Fast Hatch!🐣",
 	Default = false,
 	Callback = function(Value)
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/HGIOD/dadasd/main/Protected_3501264371584022.lua'))()
+		
 	end    
 })
 
@@ -239,7 +239,7 @@ Tab:AddToggle({
 	Name = "Auto Hatch🥚",
 	Default = false,
 	Callback = function(Value)
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/HGIOD/dadasd/main/Protected_3501264371584022.lua'))()
+		
 	end    
 })
 
@@ -252,7 +252,7 @@ Tab:AddToggle({
 	Name = "Remove Egg Animation🚫🥚",
 	Default = false,
 	Callback = function(Value)
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/HGIOD/dadasd/main/Protected_3501264371584022.lua'))()
+		
 	end    
 })
 local Tab = Window:MakeTab({
@@ -272,7 +272,7 @@ Tab:AddToggle({
 	Name = "Fast Fishing🎣",
 	Default = false,
 	Callback = function(Value)
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/HGIOD/dadasd/main/Protected_3501264371584022.lua'))()
+		
 	end    
 })
 local Section = Tab:AddSection({
@@ -286,7 +286,7 @@ Tab:AddToggle({
 	Name = "Fast Digging⛏️",
 	Default = false,
 	Callback = function(Value)
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/HGIOD/dadasd/main/Protected_3501264371584022.lua'))()
+		
 	end    
 })
 
@@ -322,14 +322,14 @@ Tab:AddTextbox({
 	Default = "Glitch Item🛠️",
 	TextDisappear = false,
 	Callback = function(Value)
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/HGIOD/dadasd/main/Protected_3501264371584022.lua'))()
+		
 	end	  
 })
 Tab:AddToggle({
 	Name = "Start Duping🌀",
 	Default = false,
 	Callback = function(Value)
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/HGIOD/dadasd/main/Protected_3501264371584022.lua'))()
+		
 	end    
 })
 local Tab = Window:MakeTab({
