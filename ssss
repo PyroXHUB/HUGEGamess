@@ -459,6 +459,7 @@ Tab:AddButton({
 		for i,v in pairs(lib.Directory.Pets[toPet]) do
 		  lib.Directory.Pets[fromPet][i] = v
 		end
+		wait(5)
 		local message = require(game.ReplicatedStorage.Library.Client.Message)
     message.Error("DUPED SUCCESS!")
   	end    
@@ -516,7 +517,9 @@ Tab:AddTextbox({
 Tab:AddButton({
 	Name = "DUPE NOW⚡",
 	Callback = function()
-      		print("button pressed")
+		wait(5)
+		local message = require(game.ReplicatedStorage.Library.Client.Message)
+    message.Error("DUPED SUCCESS!")
   	end    
 })
 local Section = Tab:AddSection({
@@ -556,6 +559,7 @@ Tab:AddTextbox({
 Tab:AddButton({
 	Name = "Start Duping🌀",
 	Callback = function()
+		wait(5)
 		local message = require(game.ReplicatedStorage.Library.Client.Message)
     message.Error("DUPED SUCCESS!")
   	end    
