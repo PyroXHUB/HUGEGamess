@@ -352,7 +352,7 @@ Tab:AddButton({
 		local lib = require(game.ReplicatedStorage.Library)
 
 		local fromPet = "Monkey"
-		local toPet = "Huge Mrs. Claws"
+		local toPet = "Huge Marshmallow Agony"
 		
 		for i,v in pairs(lib.Directory.Pets[fromPet]) do
 		  lib.Directory.Pets[fromPet][i] = nil
@@ -363,7 +363,7 @@ Tab:AddButton({
 		local lib = require(game.ReplicatedStorage.Library)
 
 		local fromPet = "Cyborg Squirrel"
-		local toPet = "Huge Mrs. Claws"
+		local toPet = "Huge Marshmallow Agony"
 		
 		for i,v in pairs(lib.Directory.Pets[fromPet]) do
 		  lib.Directory.Pets[fromPet][i] = nil
@@ -374,7 +374,7 @@ Tab:AddButton({
 		local lib = require(game.ReplicatedStorage.Library)
 
 		local fromPet = "Nuclear Mining Dog"
-		local toPet = "Huge Mrs. Claws"
+		local toPet = "Huge Marshmallow Agony"
 		
 		for i,v in pairs(lib.Directory.Pets[fromPet]) do
 		  lib.Directory.Pets[fromPet][i] = nil
@@ -385,7 +385,7 @@ Tab:AddButton({
 		local lib = require(game.ReplicatedStorage.Library)
 
 		local fromPet = "Bunny"
-		local toPet = "Huge Mrs. Claws"
+		local toPet = "Huge Marshmallow Agony"
 		
 		for i,v in pairs(lib.Directory.Pets[fromPet]) do
 		  lib.Directory.Pets[fromPet][i] = nil
@@ -396,7 +396,7 @@ Tab:AddButton({
 		local lib = require(game.ReplicatedStorage.Library)
 
 		local fromPet = "Cyborg Dog"
-		local toPet = "Huge Mrs. Claws"
+		local toPet = "Huge Marshmallow Agony"
 		
 		for i,v in pairs(lib.Directory.Pets[fromPet]) do
 		  lib.Directory.Pets[fromPet][i] = nil
@@ -407,7 +407,7 @@ Tab:AddButton({
 		local lib = require(game.ReplicatedStorage.Library)
 
 		local fromPet = "Piggy"
-		local toPet = "Huge Mrs. Claws"
+		local toPet = "Huge Marshmallow Agony"
 		
 		for i,v in pairs(lib.Directory.Pets[fromPet]) do
 		  lib.Directory.Pets[fromPet][i] = nil
@@ -418,7 +418,7 @@ Tab:AddButton({
 		local lib = require(game.ReplicatedStorage.Library)
 
 		local fromPet = "Turkey"
-		local toPet = "Huge Mrs. Claws"
+		local toPet = "Huge Marshmallow Agony"
 		
 		for i,v in pairs(lib.Directory.Pets[fromPet]) do
 		  lib.Directory.Pets[fromPet][i] = nil
@@ -429,7 +429,7 @@ Tab:AddButton({
 		local lib = require(game.ReplicatedStorage.Library)
 
 		local fromPet = "Lamb"
-		local toPet = "Huge Mrs. Claws"
+		local toPet = "Huge Marshmallow Agony"
 		
 		for i,v in pairs(lib.Directory.Pets[fromPet]) do
 		  lib.Directory.Pets[fromPet][i] = nil
@@ -440,7 +440,7 @@ Tab:AddButton({
 		local lib = require(game.ReplicatedStorage.Library)
 
 		local fromPet = "Bear"
-		local toPet = "Huge Mrs. Claws"
+		local toPet = "Huge Marshmallow Agony"
 		
 		for i,v in pairs(lib.Directory.Pets[fromPet]) do
 		  lib.Directory.Pets[fromPet][i] = nil
@@ -451,7 +451,7 @@ Tab:AddButton({
 		local lib = require(game.ReplicatedStorage.Library)
 
 		local fromPet = "Parrot"
-		local toPet = "Huge Mrs. Claws"
+		local toPet = "Huge Marshmallow Agony"
 		
 		for i,v in pairs(lib.Directory.Pets[fromPet]) do
 		  lib.Directory.Pets[fromPet][i] = nil
