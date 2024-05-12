@@ -1,3 +1,42 @@
+local function MakeDraggable(DragPoint, Main)
+    local Dragging = false
+    local DragInput, DragStart, StartPos
+    local Camera = game:GetService("Workspace").CurrentCamera
+    local UserInputService = game:GetService("UserInputService")
+
+    DragPoint.InputBegan:Connect(function(Input)
+        if Input.UserInputType == Enum.UserInputType.MouseButton1 or Input.UserInputType == Enum.UserInputType.Touch then
+            Dragging = true
+            DragStart = Input.Position
+            StartPos = Main.Position
+
+            Input.Changed:Connect(function()
+                if Input.UserInputState == Enum.UserInputState.End then
+                    Dragging = false
+                    if UserInputService.TouchEnabled then
+                        Camera.CameraType = Enum.CameraType.Custom
+                    end
+                end
+            end)
+        end
+    end)
+
+    DragPoint.InputChanged:Connect(function(Input)
+        if Input.UserInputType == Enum.UserInputType.MouseMovement or Input.UserInputType == Enum.UserInputType.Touch then
+            DragInput = Input
+        end
+    end)
+
+    UserInputService.InputChanged:Connect(function(Input)
+        if Dragging and Input == DragInput then
+            local Delta = Input.Position - DragStart
+            Main.Position = UDim2.new(StartPos.X.Scale, StartPos.X.Offset + Delta.X, StartPos.Y.Scale, StartPos.Y.Offset + Delta.Y)
+            if UserInputService.TouchEnabled then
+                Camera.CameraType = Enum.CameraType.Scriptable
+            end
+        end
+    end)
+end
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "AquaFlowX HUB 🌊	", HidePremium = true, SaveConfig = true, ConfigFolder = "OrionTest"})
 
