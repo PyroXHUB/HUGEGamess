@@ -1,0 +1,137 @@
+-- Create ScreenGui
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "PyroXHUB"
+screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+-- Create Frame
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 300, 0, 250)
+frame.Position = UDim2.new(0.5, -150, 0.5, -125)
+frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+frame.BorderSizePixel = 0
+frame.Visible = false
+frame.Parent = screenGui
+
+-- Create Title Label
+local titleLabel = Instance.new("TextLabel")
+titleLabel.Size = UDim2.new(0, 260, 0, 50)
+titleLabel.Position = UDim2.new(0.5, -130, 0.1, -25)
+titleLabel.BackgroundTransparency = 1
+titleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+titleLabel.Text = "Huge Duping V2.07"
+titleLabel.Font = Enum.Font.Cartoon
+titleLabel.TextScaled = true
+titleLabel.Parent = frame
+
+-- Create TextBox
+local textBox = Instance.new("TextBox")
+textBox.Size = UDim2.new(0, 260, 0, 50)
+textBox.Position = UDim2.new(0.5, -130, 0.4, -25)
+textBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+textBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+textBox.PlaceholderText = "Enter Huge Name"
+textBox.Font = Enum.Font.Cartoon
+textBox.TextScaled = true
+textBox.Parent = frame
+
+-- Create TextButton
+local textButton = Instance.new("TextButton")
+textButton.Size = UDim2.new(0, 260, 0, 50)
+textButton.Position = UDim2.new(0.5, -130, 0.8, -25)
+textButton.BackgroundColor3 = Color3.fromRGB(0, 122, 204)
+textButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+textButton.Text = "Start Duping"
+textButton.Font = Enum.Font.Cartoon
+textButton.TextScaled = true
+textButton.Parent = frame
+
+-- Button click event
+textButton.MouseButton1Click:Connect(function()
+    local hugeName = textBox.Text
+    local args = {
+    [1] = "8243a5b0ba554a118b00ae450ef966c0"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Pets_Favorite"):FireServer(unpack(args))
+local args = {
+    [1] = "030b4cf1cea342e0b71bb3031d634cb3"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Pets_Favorite"):FireServer(unpack(args))
+local args = {
+    [1] = "c6afa63813a9419095b01ffb2b559d85"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Pets_Favorite"):FireServer(unpack(args))
+end)
+
+-- Create Logo
+local logo = Instance.new("ImageButton")
+logo.Size = UDim2.new(0, 100, 0, 100)
+logo.Position = UDim2.new(0.5, -50, 0.5, -50)
+logo.BackgroundTransparency = 1
+logo.Image = "rbxassetid://18129189088"
+logo.Parent = screenGui
+
+-- Make Logo Circular
+local uiCorner = Instance.new("UICorner")
+uiCorner.CornerRadius = UDim.new(0.5, 0)
+uiCorner.Parent = logo
+
+-- Logo animation and click event
+logo.MouseEnter:Connect(function()
+    logo:TweenSize(UDim2.new(0, 120, 0, 120), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.5, true)
+end)
+
+logo.MouseLeave:Connect(function()
+    logo:TweenSize(UDim2.new(0, 100, 0, 100), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.5, true)
+end)
+
+local function toggleGUI()
+    if frame.Visible then
+        frame:TweenPosition(UDim2.new(0.5, -150, 1.5, -125), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.5, true, function()
+            frame.Visible = false
+        end)
+    else
+        frame.Position = UDim2.new(0.5, -150, 1.5, -125)
+        frame.Visible = true
+        frame:TweenPosition(UDim2.new(0.5, -150, 0.5, -125), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.5, true)
+    end
+end
+
+logo.MouseButton1Click:Connect(toggleGUI)
+
+-- Make Logo Draggable
+local dragging = false
+local dragInput, mousePos, logoPos
+
+local function update(input)
+    local delta = input.Position - mousePos
+    logo.Position = UDim2.new(logoPos.X.Scale, logoPos.X.Offset + delta.X, logoPos.Y.Scale, logoPos.Y.Offset + delta.Y)
+end
+
+logo.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        dragging = true
+        mousePos = input.Position
+        logoPos = logo.Position
+
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                dragging = false
+            end
+        end)
+    end
+end)
+
+logo.InputChanged:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+        dragInput = input
+    end
+end)
+
+game:GetService("UserInputService").InputChanged:Connect(function(input)
+    if input == dragInput and dragging then
+        update(input)
+    end
+end)
