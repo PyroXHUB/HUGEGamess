@@ -49,21 +49,10 @@ textButton.Parent = frame
 textButton.MouseButton1Click:Connect(function()
     local hugeName = textBox.Text
     local args = {
-    [1] = "8243a5b0ba554a118b00ae450ef966c0"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Pets_Favorite"):FireServer(unpack(args))
-local args = {
-    [1] = "030b4cf1cea342e0b71bb3031d634cb3"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Pets_Favorite"):FireServer(unpack(args))
-local args = {
     [1] = "c6afa63813a9419095b01ffb2b559d85"
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Pets_Favorite"):FireServer(unpack(args))
-end)
 
 -- Create Logo
 local logo = Instance.new("ImageButton")
